@@ -9,7 +9,7 @@ const UseRefHook = () => {
     console.log('inupt ref val', inputRef.current.value);
   };
   const onChange = value => {
-    inputRef.current = value;
+    inputRef.current.value = value;
   };
   return (
     <View style={styles.root}>
@@ -19,7 +19,7 @@ const UseRefHook = () => {
           placeholder="Enter name"
           style={styles.input}
           ref={inputRef}
-          onChange={val => onChange(val)}
+          onChangeText={val => onChange(val)}
         />
         <Button title="change name" onPress={() => onClick()} />
       </View>
