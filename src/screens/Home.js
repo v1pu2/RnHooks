@@ -18,6 +18,10 @@ const Home = props => {
         onPress={() => props?.navigation.navigate('useLayoytEffectHook')}
       />
       <Button
+        title="UseReducer Hook"
+        onPress={() => props?.navigation.navigate('useReducerHook')}
+      />
+      <Button
         title="UseRef Hook"
         onPress={() => props?.navigation.navigate('useRefHook')}
       />
