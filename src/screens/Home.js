@@ -18,10 +18,6 @@ const Home = props => {
         onPress={() => props?.navigation.navigate('useLayoytEffectHook')}
       />
       <Button
-        title="UseMemo Hook"
-        onPress={() => props?.navigation.navigate('useMemoHook')}
-      />
-      <Button
         title="UseRef Hook"
         onPress={() => props?.navigation.navigate('useRefHook')}
       />
@@ -32,6 +28,14 @@ const Home = props => {
       <Button
         title="UseContext Hook"
         onPress={() => props?.navigation.navigate('useContextHook')}
+      />
+      <Button
+        title="UseMemo Hook"
+        onPress={() => props?.navigation.navigate('useMemoHook')}
+      />
+      <Button
+        title="UseCallback Hook"
+        onPress={() => props?.navigation.navigate('useCallbackHook')}
       />
     </View>
   );

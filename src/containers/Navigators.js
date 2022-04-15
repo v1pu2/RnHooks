@@ -10,6 +10,7 @@ import UseRefHook from '../screens/UseRefHook';
 import UseLayoutEffectHook from '../screens/UseLayoutEffectHook';
 import UseImperativeHandleHook from '../screens/UseImperativeHandleHook';
 import UseContextHook from '../screens/UseContextHook';
+import UseCallBackHook from '../screens/UseCallBackHook';
 
 const Navigators = () => {
   const Stack = createNativeStackNavigator();
@@ -30,6 +31,7 @@ const Navigators = () => {
           component={UseImperativeHandleHook}
         />
         <Stack.Screen name="useContextHook" component={UseContextHook} />
+        <Stack.Screen name="useCallbackHook" component={UseCallBackHook} />
       </Stack.Navigator>
     </NavigationContainer>
   );
